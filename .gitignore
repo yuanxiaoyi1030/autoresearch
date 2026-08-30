@@ -1,0 +1,14 @@
+# Purpose: Keeps v0.2 runtime, build, dependency, and cache data out of source control.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.next/
+node_modules/
+*.tsbuildinfo
+dist/
+build/
+*.sqlite3
+.env
+tests/.tmp/

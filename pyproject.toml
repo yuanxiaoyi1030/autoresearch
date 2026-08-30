@@ -1,0 +1,16 @@
+# Purpose: Declares the isolated AutoResearch v0.2 Python package without adding dependencies.
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autoresearch-v0-2"
+version = "0.2.0"
+description = "Local-first, auditable, domain-neutral research runtime"
+requires-python = ">=3.9"
+dependencies = ["fastapi>=0.100", "pydantic>=2", "uvicorn>=0.20"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["research_runtime*", "storage*", "apps*"]
+
